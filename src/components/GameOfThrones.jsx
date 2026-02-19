@@ -12,7 +12,7 @@ const GameOfThrones = () => {
 
     useEffect(() => {
         fetch("https://www.anapioficeandfire.com/api/houses")
-            .then((res) => res.json())
+            .then((reponse) => reponse.json())
             .then((data) => setHouses(data))
             .catch((err) => console.error(err));
     }, []);
